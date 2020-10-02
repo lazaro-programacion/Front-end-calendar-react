@@ -1,23 +1,18 @@
-html, body{
+html, body {
     height: 100vh;
     width: 100vw;
 }
 
-.calendar-screen{
+.calendar-screen {
     display: flex;
     flex-flow: column;
     height: 100vh;
- 
-
 }
 
-.rbc-calendar{
-    height: 100vh;
-    width: 98vw;
-
+.rbc-calendar {
+    height: 100%;
 }
 
-/* mODAL */
 /* Modal */
 .ReactModalPortal > div{
     opacity: 0;
@@ -59,14 +54,18 @@ html, body{
     padding: 10px;
 }
 
-.react-datetime-picker__wrapper {
-    display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
-    border: none
+
+/* Datepicker */
+.react-datetime-picker input:focus {
+    outline: none;
 }
 
-.fab{
+.react-datetime-picker__wrapper {
+    border: 0px solid gray !important;
+}
+
+/* FABS */
+.fab {
     border-radius: 100%;
     bottom: 25px;
     font-size: 30px;
@@ -75,7 +74,7 @@ html, body{
     right: 25px;
 }
 
-.fab-danger{
+.fab-danger {
     bottom: 25px;
     padding: 10px;
     position: fixed;
